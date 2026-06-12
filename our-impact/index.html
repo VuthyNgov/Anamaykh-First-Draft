@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Impact | Anamay</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="our-impact-page">
+  <header class="site-header">
+    <button class="icon-button" id="openMenu" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+    <a href="../home/" class="site-logo" aria-label="Anamay home">
+      <img src="../images/anamay-logo.png" alt="Anamay logo" />
+    </a>
+
+    <div class="header-search">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search products..." />
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+      <button class="icon-button" id="searchToggle" aria-label="Open search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <line x1="16.2" y1="16.2" x2="21" y2="21"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+    <nav>
+      <a href="../home/">Home</a>
+      <a href="../about-us/">About Us</a>
+      <a href="../our-journey/">Our Journey</a>
+      <a href="../our-impact/">Our Impact</a>
+    </nav>
+  </aside>
+
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <main class="impact-page">
+    <section class="impact-section">
+      <h1>Our Contribution to Society</h1>
+
+      <div class="impact-text">
+        <p>
+          ANAMAY was created with the hope of helping improve hygiene in rural communities in Cambodia. As a first small step, we provide hygiene products such as our handmade soap, toothpaste, shampoo, and toothbrushes to support families in their daily care. It may be a simple contribution, but we believe that small acts of care can bring comfort, dignity, and better hygiene to people who need it.
+        </p>
+      </div>
+
+      <div class="gallery impact-gallery" data-gallery>
+        <div class="main-image-wrap">
+          <img class="main-gallery-image" src="../images/com-charity1.jpg" alt="ANAMAY community hygiene contribution" />
+        </div>
+
+        <div class="thumbnail-row" aria-label="Choose community impact image">
+          <button class="thumbnail is-active" data-index="0" data-image="../images/com-charity1.jpg">
+            <img src="../images/com-charity1.jpg" alt="Community impact thumbnail 1" />
+          </button>
+          <button class="thumbnail" data-index="1" data-image="../images/com-charity2.jpg">
+            <img src="../images/com-charity2.jpg" alt="Community impact thumbnail 2" />
+          </button>
+          <button class="thumbnail" data-index="2" data-image="../images/com-charity3.jpg">
+            <img src="../images/com-charity3.jpg" alt="Community impact thumbnail 3" />
+          </button>
+          <button class="thumbnail" data-index="3" data-image="../images/com-charity4.jpg">
+            <img src="../images/com-charity4.jpg" alt="Community impact thumbnail 4" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-section impact-section-divider">
+      <h2>Sharing Hygiene Awareness</h2>
+
+      <div class="impact-text">
+        <p>
+          We also provide free soap to hotels and hospitals as another way to share the importance of hygiene. Through these small contributions, we hope more people can experience ANAMAY products and understand the care behind them. For us, every bar of soap is not only a product, but also a reminder that good hygiene matters in every place and for every person.
+        </p>
+      </div>
+
+      <div class="gallery impact-gallery" data-gallery>
+        <div class="main-image-wrap">
+          <img class="main-gallery-image" src="../images/hotel-charity1.jpg" alt="ANAMAY hygiene awareness contribution" />
+        </div>
+
+        <div class="thumbnail-row" aria-label="Choose hotel and hospital impact image">
+          <button class="thumbnail is-active" data-index="0" data-image="../images/hotel-charity1.jpg">
+            <img src="../images/hotel-charity1.jpg" alt="Hotel impact thumbnail 1" />
+          </button>
+          <button class="thumbnail" data-index="1" data-image="../images/hotel-charity2.jpg">
+            <img src="../images/hotel-charity2.jpg" alt="Hotel impact thumbnail 2" />
+          </button>
+          <button class="thumbnail" data-index="2" data-image="../images/hotel-charity3.jpg">
+            <img src="../images/hotel-charity3.jpg" alt="Hotel impact thumbnail 3" />
+          </button>
+          <button class="thumbnail" data-index="3" data-image="../images/hospital-charity.jpg">
+            <img src="../images/hospital-charity.jpg" alt="Hospital impact thumbnail" />
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="../images/anamay-logo.png" alt="Anamay logo" class="footer-logo" />
+    <p class="footer-slogan">Hand Soap - Hand Made</p>
+
+    <div class="social-links">
+      <a href="#" data-social="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="facebook-icon">
+          <path d="M13.6 21V13.7H16.1L16.5 10.8H13.6V8.9C13.6 8.1 13.8 7.5 15 7.5H16.6V4.9C16.3 4.9 15.4 4.8 14.3 4.8C12 4.8 10.4 6.2 10.4 8.7V10.8H7.8V13.7H10.4V21H13.6Z"/>
+        </svg>
+      </a>
+
+      <a href="#" data-social="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="instagram-icon">
+          <rect x="5" y="5" width="14" height="14" rx="4" />
+          <circle cx="12" cy="12" r="3.2" />
+          <circle cx="16.7" cy="7.3" r="0.9" />
+        </svg>
+      </a>
+    </div>
+
+    <p class="footer-address">
+      N<sup>o</sup>48E, St. 126, Phsar Thmei 1,
+      <br> Khan Daun Penh, Phnom Penh
+    </p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

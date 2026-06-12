@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine Soap | Anamay</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="product-detail-page jasmine-page">
+  <header class="site-header">
+    <button class="icon-button" id="openMenu" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+    <a href="../home/" class="site-logo" aria-label="Anamay home">
+      <img src="../images/anamay-logo.png" alt="Anamay logo" />
+    </a>
+
+    <div class="header-search">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search products..." />
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+      <button class="icon-button" id="searchToggle" aria-label="Open search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <line x1="16.2" y1="16.2" x2="21" y2="21"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+    <nav>
+      <a href="../home/">Home</a>
+      <a href="../about-us/">About Us</a>
+      <a href="../our-journey/">Our Journey</a>
+      <a href="../our-impact/">Our Impact</a>
+    </nav>
+  </aside>
+
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <main class="product-page">
+    <section class="product-gallery gallery" data-gallery>
+      <div class="main-image-wrap product-main-wrap">
+        <img
+          class="main-product-image main-gallery-image"
+          src="../images/jasmine-jasmine-main.jpg"
+          alt="Anamay Jasmine"
+        />
+      </div>
+
+      <div class="thumbnail-row" aria-label="Choose product image">
+          <button class="thumbnail is-active" data-index="0" data-image="../images/jasmine-jasmine-main.jpg" aria-label="Anamay Jasmine image 1">
+            <img src="../images/jasmine-jasmine-main.jpg" alt="Anamay Jasmine thumbnail 1" />
+          </button>
+          <button class="thumbnail" data-index="1" data-image="../images/jasmine-jasmine-packaging.jpg" aria-label="Anamay Jasmine image 2">
+            <img src="../images/jasmine-jasmine-packaging.jpg" alt="Anamay Jasmine thumbnail 2" />
+          </button>
+          <button class="thumbnail" data-index="2" data-image="../images/jasmine-jasmine-display.jpg" aria-label="Anamay Jasmine image 3">
+            <img src="../images/jasmine-jasmine-display.jpg" alt="Anamay Jasmine thumbnail 3" />
+          </button>
+          <button class="thumbnail" data-index="3" data-image="../images/jasmine-jasmine-lather.png" aria-label="Anamay Jasmine image 4">
+            <img src="../images/jasmine-jasmine-lather.png" alt="Anamay Jasmine thumbnail 4" />
+          </button>
+      </div>
+    </section>
+
+    <section class="product-info">
+      <p class="eyebrow">Hand Soap - Hand Made</p>
+
+      <h1>Anamay Jasmine</h1>
+
+      <div class="price product-detail-price" id="productPrice">$0.50</div>
+
+      <div class="info-block">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Coconut Oil</li>
+          <li>Olive Oil</li>
+          <li>Shea Butter</li>
+          <li>Jasmine Oil</li>
+        </ul>
+      </div>
+
+      <div class="size-block">
+        <h2>Size</h2>
+
+        <div class="size-options" role="radiogroup" aria-label="Choose size">
+          <button class="size-option is-selected" data-price="$0.50" role="radio" aria-checked="true">
+            30g
+          </button>
+
+          <button class="size-option" data-price="$2.00" role="radio" aria-checked="false">
+            100g
+          </button>
+        </div>
+      </div>
+
+      <div class="inquiry-block">
+        <h2>Inquire More</h2>
+        <div class="inquiry-icons">
+          <a href="#" data-social="facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="facebook-icon">
+              <path d="M13.6 21V13.7H16.1L16.5 10.8H13.6V8.9C13.6 8.1 13.8 7.5 15 7.5H16.6V4.9C16.3 4.9 15.4 4.8 14.3 4.8C12 4.8 10.4 6.2 10.4 8.7V10.8H7.8V13.7H10.4V21H13.6Z"/>
+            </svg>
+          </a>
+
+          <a href="#" data-social="instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="instagram-icon">
+              <rect x="5" y="5" width="14" height="14" rx="4" />
+              <circle cx="12" cy="12" r="3.2" />
+              <circle cx="16.7" cy="7.3" r="0.9" />
+            </svg>
+          </a>
+
+          <a href="#" data-social="telegram" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="telegram-icon">
+              <path d="M21 4.8L17.9 19.4C17.7 20.3 17.1 20.5 16.3 19.9L11.6 16.4L9.3 18.6C9.1 18.8 8.8 19.1 8.3 19.1L8.7 14.3L17.4 6.4C17.8 6.1 17.3 5.9 16.8 6.2L6.1 13L1.5 11.6C0.5 11.3 0.5 10.6 1.7 10.1L19.7 3.2C20.5 2.9 21.3 3.4 21 4.8Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="../images/anamay-logo.png" alt="Anamay logo" class="footer-logo" />
+    <p class="footer-slogan">Hand Soap - Hand Made</p>
+
+    <div class="social-links">
+      <a href="#" data-social="facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="facebook-icon">
+          <path d="M13.6 21V13.7H16.1L16.5 10.8H13.6V8.9C13.6 8.1 13.8 7.5 15 7.5H16.6V4.9C16.3 4.9 15.4 4.8 14.3 4.8C12 4.8 10.4 6.2 10.4 8.7V10.8H7.8V13.7H10.4V21H13.6Z"/>
+        </svg>
+      </a>
+
+      <a href="#" data-social="instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="instagram-icon">
+          <rect x="5" y="5" width="14" height="14" rx="4" />
+          <circle cx="12" cy="12" r="3.2" />
+          <circle cx="16.7" cy="7.3" r="0.9" />
+        </svg>
+      </a>
+    </div>
+
+    <p class="footer-address">
+      N<sup>o</sup>48E, St. 126, Phsar Thmei 1,
+      <br> Khan Daun Penh, Phnom Penh
+    </p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
