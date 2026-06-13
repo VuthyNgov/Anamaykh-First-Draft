@@ -12,94 +12,127 @@
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body class="our-journey-page">
-  <header class="site-header">
-    <button class="icon-button" id="openMenu" aria-label="Open menu">
+<header class="site-header">
+  <button class="icon-button" id="openMenu" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
+  <a href="../home/" class="site-logo" aria-label="Anamay home">
+    <img src="../images/anamay-logo.png" alt="Anamay logo" />
+  </a>
+
+  <div class="header-search">
+    <input type="text" class="search-input" id="searchInput" placeholder="Search products..." />
+    <div class="search-results" id="searchResults" aria-live="polite"></div>
+    <button class="icon-button" id="searchToggle" aria-label="Open search">
       <svg viewBox="0 0 24 24" aria-hidden="true">
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <line x1="16.2" y1="16.2" x2="21" y2="21"></line>
       </svg>
     </button>
+  </div>
+</header>
 
-    <a href="../home/" class="site-logo" aria-label="Anamay home">
-      <img src="../images/anamay-logo.png" alt="Anamay logo" />
+<aside class="side-menu" id="sideMenu">
+  <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+  <nav>
+    <a href="../home/">Home</a>
+    <a href="../about-us/">About Us</a>
+    <a href="../our-journey/">Our Journey</a>
+    <a href="../our-impact/">Our Impact</a>
+  </nav>
+</aside>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+
+<main class="about-page journey-page">
+  <section class="journey-clean-section">
+
+    <div class="journey-clean-block">
+      <h2>How ANAMAY Started</h2>
+      <p>
+        ANAMAY started from a simple but important concern. We saw that many people in rural Cambodia still face difficulties with hygiene and proper sanitation in their daily lives. That touched our hearts and made us want to do something meaningful. We created ANAMAY with the hope that, through handmade soap, we could build a business that not only provides useful products, but also helps support better sanitation for communities in need.
+      </p>
+    </div>
+
+    <div class="journey-clean-block">
+      <h2>What Keeps Us Motivated</h2>
+      <p>
+        What keeps us motivated is knowing that ANAMAY can make a difference in people’s lives in more than one way. Since the beginning, ANAMAY has given house maids and women in need the opportunity to earn an income by supporting the production of our handmade soap. We are happy to be able to support them not only through work, but also by helping them gain practical skills and knowledge that they can carry with them into the future to support themselves and their families.
+      </p>
+    </div>
+
+    <div class="journey-clean-block">
+      <h2>How We Introduce ANAMAY</h2>
+      <p>
+        As part of ANAMAY’s journey, we share our soap with hotels and hospitals so more people can experience our products in real everyday settings. This helps introduce the quality, care, and purpose behind ANAMAY in a simple and practical way. Through these small steps, we hope to build trust, create awareness, and bring the brand closer to the community.
+      </p>
+
+      <div class="gallery journey-awareness-gallery" data-gallery>
+        <div class="main-image-wrap">
+          <img class="main-gallery-image" src="../images/hotel-charity1.jpg" alt="ANAMAY hygiene awareness contribution" />
+        </div>
+
+        <div class="thumbnail-row" aria-label="Choose hotel and hospital awareness image">
+          <button class="thumbnail is-active" data-index="0" data-image="../images/hotel-charity1.jpg">
+            <img src="../images/hotel-charity1.jpg" alt="Hotel awareness thumbnail 1" />
+          </button>
+
+          <button class="thumbnail" data-index="1" data-image="../images/hotel-charity2.jpg">
+            <img src="../images/hotel-charity2.jpg" alt="Hotel awareness thumbnail 2" />
+          </button>
+
+          <button class="thumbnail" data-index="2" data-image="../images/hotel-charity3.jpg">
+            <img src="../images/hotel-charity3.jpg" alt="Hotel awareness thumbnail 3" />
+          </button>
+
+          <button class="thumbnail" data-index="3" data-image="../images/hospital-charity.jpg">
+            <img src="../images/hospital-charity.jpg" alt="Hospital awareness thumbnail" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="journey-clean-block">
+      <h2>The Next Chapter</h2>
+      <p>
+        Our next step is to grow ANAMAY into a sustainable business that can earn enough income to create a bigger impact. Our hope is that one day we will be able to help build proper sanitation facilities and bathrooms for people living in rural communities in Cambodia. We want ANAMAY to keep growing with purpose, so that every step forward for the business also becomes a step forward for the communities we want to support.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <img src="../images/anamay-logo.png" alt="Anamay logo" class="footer-logo" />
+  <p class="footer-slogan">Hand Soap - Hand Made</p>
+
+  <div class="social-links">
+    <a href="#" data-social="facebook" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="facebook-icon">
+        <path d="M13.6 21V13.7H16.1L16.5 10.8H13.6V8.9C13.6 8.1 13.8 7.5 15 7.5H16.6V4.9C16.3 4.9 15.4 4.8 14.3 4.8C12 4.8 10.4 6.2 10.4 8.7V10.8H7.8V13.7H10.4V21H13.6Z"/>
+      </svg>
     </a>
 
-    <div class="header-search">
-      <input type="text" class="search-input" id="searchInput" placeholder="Search products..." />
-      <div class="search-results" id="searchResults" aria-live="polite"></div>
-      <button class="icon-button" id="searchToggle" aria-label="Open search">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="11" cy="11" r="6.5"></circle>
-          <line x1="16.2" y1="16.2" x2="21" y2="21"></line>
-        </svg>
-      </button>
-    </div>
-  </header>
+    <a href="#" data-social="instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="instagram-icon">
+        <rect x="5" y="5" width="14" height="14" rx="4" />
+        <circle cx="12" cy="12" r="3.2" />
+        <circle cx="16.7" cy="7.3" r="0.9" />
+      </svg>
+    </a>
+  </div>
 
-  <aside class="side-menu" id="sideMenu">
-    <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
-    <nav>
-      <a href="../home/">Home</a>
-      <a href="../about-us/">About Us</a>
-      <a href="../our-journey/">Our Journey</a>
-      <a href="../our-impact/">Our Impact</a>
-    </nav>
-  </aside>
+  <p class="footer-address">
+    N<sup>o</sup>48E, St. 126, Phsar Thmei 1,
+    <br> Khan Daun Penh, Phnom Penh
+  </p>
+</footer>
 
-  <div class="menu-backdrop" id="menuBackdrop"></div>
-
-  <main class="about-page journey-page">
-    <section class="journey-clean-section">
-      <div class="journey-clean-block">
-        <h2>How ANAMAY Started</h2>
-        <p>
-          ANAMAY started from a simple but important concern. We saw that many people in rural Cambodia still face difficulties with hygiene and proper sanitation in their daily lives. That touched our hearts and made us want to do something meaningful. We created ANAMAY with the hope that, through handmade soap, we could build a business that not only provides useful products, but also helps support better sanitation for communities in need.
-        </p>
-      </div>
-
-      <div class="journey-clean-block">
-        <h2>What Keeps Us Motivated</h2>
-        <p>
-          What keeps us motivated is knowing that ANAMAY can make a difference in people’s lives in more than one way. Since the beginning, ANAMAY has given house maids and women in need the opportunity to earn an income by supporting the production of our handmade soap. We are happy to be able to support them not only through work, but also by helping them gain practical skills and knowledge that they can carry with them into the future to support themselves and their families.
-        </p>
-      </div>
-
-      <div class="journey-clean-block">
-        <h2>The Next Chapter</h2>
-        <p>
-          Our next step is to grow ANAMAY into a sustainable business that can earn enough income to create a bigger impact. Our hope is that one day we will be able to help build proper sanitation facilities and bathrooms for people living in rural communities in Cambodia. We want ANAMAY to keep growing with purpose, so that every step forward for the business also becomes a step forward for the communities we want to support.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <img src="../images/anamay-logo.png" alt="Anamay logo" class="footer-logo" />
-    <p class="footer-slogan">Hand Soap - Hand Made</p>
-
-    <div class="social-links">
-      <a href="#" data-social="facebook" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="facebook-icon">
-          <path d="M13.6 21V13.7H16.1L16.5 10.8H13.6V8.9C13.6 8.1 13.8 7.5 15 7.5H16.6V4.9C16.3 4.9 15.4 4.8 14.3 4.8C12 4.8 10.4 6.2 10.4 8.7V10.8H7.8V13.7H10.4V21H13.6Z"/>
-        </svg>
-      </a>
-
-      <a href="#" data-social="instagram" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="instagram-icon">
-          <rect x="5" y="5" width="14" height="14" rx="4" />
-          <circle cx="12" cy="12" r="3.2" />
-          <circle cx="16.7" cy="7.3" r="0.9" />
-        </svg>
-      </a>
-    </div>
-
-    <p class="footer-address">
-      N<sup>o</sup>48E, St. 126, Phsar Thmei 1,
-      <br> Khan Daun Penh, Phnom Penh
-    </p>
-  </footer>
-
-  <script src="../script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>

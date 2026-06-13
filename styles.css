@@ -976,3 +976,36 @@ img {
     padding-top: 64px;
   }
 }
+
+
+/* JOURNEY AWARENESS SECTION */
+.our-journey-page .journey-awareness-gallery {
+  margin-top: 38px;
+}
+
+.our-journey-page .journey-awareness-gallery .main-image-wrap {
+  aspect-ratio: 16 / 9;
+}
+
+.our-journey-page .journey-clean-block h2 {
+  font-size: clamp(38px, 4vw, 62px);
+}
+
+.our-journey-page .journey-clean-block p {
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+@media (max-width: 900px) {
+  .our-journey-page .journey-awareness-gallery {
+    margin-top: 30px;
+  }
+
+  .our-journey-page .journey-awareness-gallery .main-image-wrap {
+    aspect-ratio: 4 / 5;
+  }
+
+  .our-journey-page .journey-clean-block p {
+    font-size: 16px;
+  }
+}
