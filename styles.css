@@ -1009,3 +1009,31 @@ img {
     font-size: 16px;
   }
 }
+@media (max-width: 900px) {
+  /* Show full image and remove empty space under slideshow photos */
+  .impact-gallery .main-image-wrap,
+  .process-gallery .main-image-wrap,
+  .our-journey-page .journey-awareness-gallery .main-image-wrap {
+    aspect-ratio: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .impact-gallery .main-gallery-image,
+  .impact-gallery .main-impact-image,
+  .process-gallery .main-gallery-image,
+  .process-gallery .main-process-image,
+  .our-journey-page .journey-awareness-gallery .main-gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Center thumbnails on mobile */
+  .impact-gallery .thumbnail-row,
+  .process-gallery .thumbnail-row,
+  .our-journey-page .journey-awareness-gallery .thumbnail-row {
+    justify-content: center;
+  }
+}
