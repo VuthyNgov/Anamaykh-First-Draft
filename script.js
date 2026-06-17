@@ -1,7 +1,7 @@
 const SOCIAL_LINKS = {
   facebook: "https://www.facebook.com/profile.php?id=61589443176518",
   instagram: "https://www.instagram.com/anamaykh/",
-  telegram: "#"
+  telegram: "https://t.me/phasukarphan"
 };
 
 function applySocialLinks() {
@@ -43,21 +43,21 @@ function initMenu() {
 const PRODUCTS = [
   {
     name: "Anamay Original",
-    price: "$0.25",
+    price: "$0.75",
     keywords: ["original", "classic", "coconut", "olive", "shea", "soap"],
     url: "../anamay-original/",
     image: "../images/product-original.jpg"
   },
   {
     name: "Anamay Turmeric & Honey",
-    price: "$0.50",
+    price: "$1.00",
     keywords: ["turmeric", "honey", "essential oil", "soap"],
     url: "../turmeric-honey/",
     image: "../images/product-turmeric-honey.jpg"
   },
   {
     name: "Anamay Jasmine",
-    price: "$0.50",
+    price: "$1.00",
     keywords: ["jasmine", "jasmine oil", "soap"],
     url: "../jasmine/",
     image: "../images/product-jasmine.jpg"
