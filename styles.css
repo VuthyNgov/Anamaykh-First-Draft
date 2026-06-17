@@ -1037,3 +1037,93 @@ img {
     justify-content: center;
   }
 }
+/* MEET OUR FOUNDER */
+.founder-section {
+  max-width: 1120px;
+  margin: 86px auto 0;
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 64px;
+  align-items: center;
+}
+
+.founder-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--soft);
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.founder-content {
+  width: 100%;
+  max-width: 700px;
+  justify-self: center;
+  align-self: center;
+  text-align: left;
+}
+
+.founder-content h2 {
+  margin: 0 0 24px;
+  color: var(--brand-blue);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(52px, 4.5vw, 76px);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.founder-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.85;
+  max-width: 640px;
+  text-align: left;
+}
+/* MOBILE */
+@media (max-width: 900px) {
+  .about-us-page .founder-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-us-page .founder-content {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .about-us-page .founder-content h2 {
+    text-align: center;
+    white-space: normal;
+    font-size: clamp(38px, 10vw, 52px);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .about-us-page .founder-content p {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    font-size: 15.5px;
+    line-height: 1.7;
+  }
+
+  .about-us-page .founder-image {
+    order: 2;
+    width: 82%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
