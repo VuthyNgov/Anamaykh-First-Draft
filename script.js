@@ -40,27 +40,30 @@ function initMenu() {
   menuBackdrop.addEventListener("click", closeSideMenu);
 }
 
+const basePath = document.body.classList.contains("home-page") ? "./" : "../";
+
 const PRODUCTS = [
+
   {
     name: "Anamay Original",
     price: "$0.75",
     keywords: ["original", "classic", "coconut", "olive", "shea", "soap"],
-    url: "../anamay-original/",
-    image: "../images/product-original.jpg"
+    url: `${basePath}anamay-original/`,
+    image: `${basePath}images/product-original.webp`
   },
   {
     name: "Anamay Turmeric & Honey",
     price: "$1.00",
     keywords: ["turmeric", "honey", "essential oil", "soap"],
-    url: "../turmeric-honey/",
-    image: "../images/product-turmeric-honey.jpg"
+    url: `${basePath}turmeric-honey/`,
+    image: `${basePath}images/product-turmeric-honey.webp`
   },
   {
     name: "Anamay Jasmine",
     price: "$1.00",
     keywords: ["jasmine", "jasmine oil", "soap"],
-    url: "../jasmine/",
-    image: "../images/product-jasmine.jpg"
+    url: `${basePath}jasmine/`,
+    image: `${basePath}images/product-jasmine.webp`
   }
 ];
 
